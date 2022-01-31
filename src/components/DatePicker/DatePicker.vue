@@ -109,6 +109,7 @@ export default {
           maxDate: this.maxDateExact || this.maxDate,
           disabledDates: this.disabledDates,
           availableDates: this.availableDates,
+          buddhist: this.buddhist,
           onDayclick: this.onDayClick,
           onDaykeydown: this.onDayKeydown,
           onDaymouseenter: this.onDayMouseEnter,
@@ -183,6 +184,10 @@ export default {
     dragAttribute: Object,
     selectAttribute: Object,
     attributes: Array,
+     buddhist: {
+      type: Boolean,
+      default: false,
+    },
     validHours: [Object, Array, Function],
   },
   data() {
